@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo 'Acesso inválido! Utilize o método POST para enviar o formulário.';
     exit;
 }
-$nome = $_POST['name'];
+$nome = $_POST['nome'];
 $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
 
