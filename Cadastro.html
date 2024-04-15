@@ -6,16 +6,11 @@
 <head>
 <title>Queijo com Goiabada studios</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 <div id="topLine">
   <div id="header">
-    <ul class="nav">
-        <li><a href="/index.html">Inicio</a></li>
-        <li ><a href="/Sobre.html">Sobre</a></li>
-        <li><a href="/Cadastro.html">Login</a></li>
-    </ul>
     <h1><span>||</span> Queridos<span>Bolos</span></h1>
   </div>
 </div>
@@ -23,19 +18,21 @@
   <div id="wrapper">
     <div id="content">
       <h2> Formulário</h2>
-      <form method="post" action="#">
-        <label for="name">Nome: </label>
-        <input name="name" id="name" type="text" tabindex="2"/>
-        <br/>
-        <label for="email">E-mail: </label>
-        <input name="email" id="email" type="text" tabindex="3"/>
-        <br/>
-        <label for="comments" class="comments"> Comentário: </label>
-        <textarea name="comments" id="comments" tabindex="40" cols="35" rows="10"></textarea>
+      <form action="main.php" method="post">
+        <p>Digite seu nome: <label>
+          <input type="text" name="nome" size="20">
+        </label>
         <p>
-          <input name="send" id="send" type="submit" value="Enviar"/>
-          <input name="button2" id="button2" type="reset" value="Reset" />
+        <p>Digite seu email: <label>
+          <input type="text" name="email" size="20">
+        </label>
         </p>
+        <p><label>Digite sua mensagem:</label>
+        <label for= mensagem></label>
+          <textarea id= mensagem name="mensagem"></textarea>
+        <p>
+        <p><input type="submit" value="enviar" name="Enviar"></p>
+        <p><input type="reset" value="reset" name="Reset"></p>
       </form>
     </div>
 </body>
