@@ -6,21 +6,38 @@
 <head>
 <title>Queijo com Goiabada studios</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
 <div id="topLine">
   <div id="header">
-    <ul class="nav">
-        <li><a href="/index.html">Inicio</a></li>
-        <li ><a href="/Sobre.html">Sobre</a></li>
-        <li><a href="/Cadastro.html">Login</a></li>
-    </ul>
     <h1><span>||</span> Queridos<span>Bolos</span></h1>
   </div>
 </div>
-
   <div id="wrapper">
+    <div id="content">
+      <h2> Formulário</h2>
+      <form action="main.php" method="post">
+        <label>Digite seu nome: </label>
+          <input type="text" id="name" name="name" size="20">
+        <br/>
+        <label for="email">Digit seu email: </label>
+          <input name="email" id="email" type="text">
+        <br/>
+        <p><label>Digite sua mensagem:</label>
+        <label for= comments></label>
+          <textarea name="mensagem" id="comments" tabindex="40" cols="35" rows="10"></textarea>
+        <p>
+        <p><input type="submit" id="send" value="Enviar" name="send"></p>
+        <p><input type="reset" id="button2" value="Reset" name="button2"></p>
+      </form>
+    </div>
+</body>
+</html>
+
+
+<!--
+<div id="wrapper">
     <div id="content">
       <h2> Formulário</h2>
       <form method="post" action="#">
@@ -38,5 +55,4 @@
         </p>
       </form>
     </div>
-</body>
-</html>
+-->
